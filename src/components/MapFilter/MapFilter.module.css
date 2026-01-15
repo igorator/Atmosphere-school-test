@@ -1,0 +1,28 @@
+.toolbar {
+  display: grid;
+  gap: 8px;
+  padding: 20px;
+}
+
+.label {
+  font-weight: 600;
+  color: #e6e9f2;
+}
+
+.input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #283046;
+  background: #1a2233;
+  color: #e6e9f2;
+  font-size: 16px;
+}
+
+.input:focus {
+  outline: 2px solid #5d7eff;
+  border-color: transparent;
+}
+
+.input::placeholder {
+  color: #8d97ad;
+}

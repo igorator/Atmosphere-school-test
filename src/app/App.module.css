@@ -1,0 +1,25 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background: radial-gradient(circle at top, #1a2233 0%, #0f1420 70%);
+  color: #e6e9f2;
+}
+
+.header {
+  padding: 24px clamp(20px, 5vw, 48px);
+}
+
+.title {
+  font-size: clamp(20px, 4vw, 30px);
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #a9b3c9;
+}
+
+.main {
+  padding: 0 clamp(20px, 5vw, 48px) 32px;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  height: 100%;
+  min-height: 60vh;
+  position: relative;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
+
+.popup {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+  color: #0f1420;
+}

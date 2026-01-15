@@ -1,6 +1,6 @@
 # Atmosphere School Test
 
-[Deployment](http://localhost:5173)
+[Deployment](https://atmosphere-school-test.vercel.app/)
 
 ---
 
@@ -10,6 +10,7 @@
 - **TypeScript**
 - **Vite**
 - **CSS**
+- **Leaflet map**
 
 ---
 
