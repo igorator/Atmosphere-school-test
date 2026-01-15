@@ -4,6 +4,8 @@
   grid-template-rows: auto 1fr;
   background: radial-gradient(circle at top, #1a2233 0%, #0f1420 70%);
   color: #e6e9f2;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
