@@ -1,27 +1,29 @@
 .app {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  background: radial-gradient(circle at top, #1a2233 0%, #0f1420 70%);
-  color: #e6e9f2;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at top, var(--color-bg-top) 0%, var(--color-bg) 70%);
+  color: var(--color-text);
+}
+
+.header {
+  padding: 24px clamp(12px, 5vw, 48px);
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header {
-  padding: 24px clamp(20px, 5vw, 48px);
-}
-
 .title {
-  font-size: clamp(20px, 4vw, 30px);
-  letter-spacing: -0.02em;
-}
-
-.subtitle {
-  margin-top: 6px;
-  color: #a9b3c9;
+  font-size: var(--font-title);
+  text-align: center;
 }
 
 .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 0 clamp(20px, 5vw, 48px) 32px;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-grow: 1;
+  min-height: 0;
 }

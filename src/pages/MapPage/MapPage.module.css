@@ -1,18 +1,29 @@
 .page {
-  height: 100%;
-  min-height: 70vh;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
-  background: #141a28;
+  box-shadow: var(--shadow-strong);
+  background: var(--color-surface);
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .message {
   padding: 32px;
-  border-radius: 16px;
-  background: #141a28;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  color: #e6e9f2;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+  color: var(--color-text);
+  flex-grow: 1;
+}
+
+.loading {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
 }

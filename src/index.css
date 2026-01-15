@@ -27,8 +27,8 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0f1420;
-  color: #e6e9f2;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 img,
@@ -63,5 +63,26 @@ ol {
 }
 
 :root {
+  --color-bg: #0f1420;
+  --color-bg-top: #1a2233;
+  --color-surface: #141a28;
+  --color-text: #e6e9f2;
+  --color-text-muted: #8d97ad;
+  --color-text-dark: #0f1420;
+  --color-border: #283046;
+  --color-focus: #5d7eff;
+  --shadow-strong: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.3);
+  --radius-xl: 24px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --gap-xs: 4px;
+  --gap-sm: 8px;
+  --font-title: clamp(30px, 3vw, 56px);
+  --font-label: clamp(16px, 1vw, 32px);
+  --font-input: 16px;
+  --font-popup: 14px;
+  --spinner-size: 48px;
+  --spinner-thickness: 4px;
   color-scheme: dark;
 }

@@ -1,28 +1,30 @@
 .toolbar {
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
   padding: 20px;
 }
 
 .label {
+  font-size: var(--font-label);
   font-weight: 600;
-  color: #e6e9f2;
+  color: var(--color-text);
 }
 
 .input {
   padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #283046;
-  background: #1a2233;
-  color: #e6e9f2;
-  font-size: 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-top);
+  color: var(--color-text);
+  font-size: var(--font-input);
 }
 
 .input:focus {
-  outline: 2px solid #5d7eff;
+  outline: 2px solid var(--color-focus);
   border-color: transparent;
 }
 
 .input::placeholder {
-  color: #8d97ad;
+  color: var(--color-text-muted);
 }

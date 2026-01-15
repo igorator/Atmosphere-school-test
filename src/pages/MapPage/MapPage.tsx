@@ -1,6 +1,7 @@
 import styles from "./MapPage.module.css";
 import { Map } from "@/components/Map/Map";
 import { MapFilter } from "@/components/MapFilter/MapFilter";
+import { Spinner } from "@/components/Spinner/Spinner";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
 import { useUsers } from "@/hooks/useUsers";
 import { normalizeQuery } from "@/utils/normalizeQuery";
@@ -33,7 +34,11 @@ export function MapPage() {
     );
   }, [data, normalizedQuery]);
   if (isLoading) {
-    return <div className={styles.message}>Loading users...</div>;
+    return (
+      <div className={styles.loading} role="status" aria-live="polite">
+        <Spinner />
+      </div>
+    );
   }
 
   if (error) {
