@@ -1,6 +1,6 @@
 import type { MapUser } from "@/types/MapUser";
 
-export const MAP_USERS_URL = "/data/users.json";
+export const MAP_USERS_URL = import.meta.env.VITE_USERS_URL;
 
 export const fetchUsers = async (url: string): Promise<MapUser[]> => {
   const response = await fetch(url);
